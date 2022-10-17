@@ -12,10 +12,10 @@
  */
 package io.jobial.scase.example.greeting.zio
 
-import io.jobial.scase.local.LocalServiceConfiguration
+import io.jobial.scase.local.LocalServiceConfiguration.requestResponse
 
 trait GreetingServiceConfig {
 
   val greetingServiceConfig =
-    LocalServiceConfiguration[GreetingRequest[_ <: GreetingResponse], GreetingResponse]("greeting")
+    requestResponse[GreetingRequest[_ <: GreetingResponse], GreetingResponse]("greeting")
 }

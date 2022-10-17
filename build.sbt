@@ -13,9 +13,9 @@
 name := "scase-zio-example"
 
 ThisBuild / organization := "io.jobial"
-ThisBuild / scalaVersion := "2.12.13"
+ThisBuild / scalaVersion := "2.13.6"
 ThisBuild / crossScalaVersions := Seq("2.11.12", "2.12.13", "2.13.6")
-ThisBuild / version := "0.4.0"
+ThisBuild / version := "0.6.0"
 ThisBuild / scalacOptions += "-target:jvm-1.8"
 ThisBuild / Test / packageBin / publishArtifact := true
 ThisBuild / Test / packageSrc / publishArtifact := true
@@ -37,7 +37,7 @@ lazy val commonSettings = Seq(
   addCompilerPlugin("com.olegpy" %% "better-monadic-for" % "0.3.1")
 )
 
-lazy val ScaseVersion = "0.4.0"
+lazy val ScaseVersion = "0.6.0"
 lazy val ZioVersion = "2.0.0.0-RC13" // TODO: upgrade when Cats version is upgraded
 lazy val SclapVersion = "1.1.7"
 
